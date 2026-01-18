@@ -15,7 +15,7 @@ export default function App() {
   const checkIfFirstLaunch = async () => {
     try {
       const hasSeenWelcome = localStorage.getItem('toastease_welcome_seen');
-      if (hasSeenWelcome === 'true' || !APP_CONSTANTS.WELCOME_ENABLED) {
+      if (hasSeenWelcome === 'true' && APP_CONSTANTS.WELCOME_ENABLED) {
         setShowWelcome(false);
       }
     } catch (error) {
@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <div className="branded-header">
+      <div className="branded-header" onClick={() => setShowWelcome(true)} style={{ cursor: 'pointer' }}>
         <div className="branded-header-logo">🎤</div>
         <h1 className="branded-header-title">ToastEase</h1>
       </div>

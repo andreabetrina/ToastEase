@@ -26,25 +26,25 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
 
         {/* Features Grid */}
         <div className="features-grid">
-          <div className="feature-card">
+          <div className="feature-card clickable" onClick={onComplete}>
             <div className="feature-icon">📥</div>
             <div className="feature-title">Download Once</div>
             <div className="feature-text">All scripts available offline</div>
           </div>
 
-          <div className="feature-card">
+          <div className="feature-card clickable" onClick={onComplete}>
             <div className="feature-icon">🔍</div>
             <div className="feature-title">Quick Search</div>
             <div className="feature-text">Find roles and tips instantly</div>
           </div>
 
-          <div className="feature-card">
+          <div className="feature-card clickable" onClick={onComplete}>
             <div className="feature-icon">⭐</div>
             <div className="feature-title">Save Favorites</div>
             <div className="feature-text">Mark and organize your roles</div>
           </div>
 
-          <div className="feature-card">
+          <div className="feature-card clickable" onClick={onComplete}>
             <div className="feature-icon">🖨️</div>
             <div className="feature-title">Print Ready</div>
             <div className="feature-text">Export scripts for practice</div>
