@@ -58,7 +58,7 @@ export default function App() {
       {showWelcome ? (
         <WelcomeScreen onComplete={handleWelcomeComplete} />
       ) : (
-        <RoleScriptsScreen />
+        <RoleScriptsScreen onGoHome={() => setShowWelcome(true)} />
       )}
     </div>
   );

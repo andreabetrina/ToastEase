@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { APP_CONSTANTS } from '../constants';
 import './WelcomeScreen.css';
 
@@ -7,60 +7,56 @@ interface WelcomeScreenProps {
 }
 
 const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleUpcomingFeatures = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="welcome-container">
       <div className="welcome-content">
-        {/* Icon: Microphone with "TE" initials */}
+        {/* Icon: Microphone */}
         <div className="icon-container">
           <div className="microphone-icon">
             <span className="mic-symbol">🎤</span>
-            <div className="initials-badge">
-              <span className="initials-text">TE</span>
-            </div>
           </div>
         </div>
 
-        {/* Welcome Text */}
-        <h1 className="welcome-title">Welcome to ToastEase</h1>
+        {/* App Name and Tagline */}
+        <h1 className="welcome-title">ToastEase</h1>
         <p className="welcome-subtitle">Master the Art of Public Speaking</p>
 
-        {/* Features Grid */}
-        <div className="features-grid">
-          <div className="feature-card clickable" onClick={onComplete}>
-            <div className="feature-icon">📥</div>
-            <div className="feature-title">Download Once</div>
-            <div className="feature-text">All scripts available offline</div>
-          </div>
+        {/* Navigation Buttons */}
+        <div className="nav-buttons-container">
+          <button className="nav-btn primary-btn" onClick={onComplete}>
+            <span className="btn-icon">📜</span>
+            <span className="btn-text">Get the Scripts</span>
+          </button>
 
-          <div className="feature-card clickable" onClick={onComplete}>
-            <div className="feature-icon">🔍</div>
-            <div className="feature-title">Quick Search</div>
-            <div className="feature-text">Find roles and tips instantly</div>
-          </div>
+          <button className="nav-btn secondary-btn" onClick={handleUpcomingFeatures}>
+            <span className="btn-icon">🚀</span>
+            <span className="btn-text">Upcoming Features</span>
+          </button>
+        </div>
+      </div>
 
-          <div className="feature-card clickable" onClick={onComplete}>
-            <div className="feature-icon">⭐</div>
-            <div className="feature-title">Save Favorites</div>
-            <div className="feature-text">Mark and organize your roles</div>
-          </div>
-
-          <div className="feature-card clickable" onClick={onComplete}>
-            <div className="feature-icon">🖨️</div>
-            <div className="feature-title">Print Ready</div>
-            <div className="feature-text">Export scripts for practice</div>
+      {/* Modal for Upcoming Features */}
+      {showModal && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <h2 className="modal-title">Upcoming Features</h2>
+            <p className="modal-message">Still working on adding features</p>
+            <button className="modal-close-btn" onClick={closeModal}>
+              Close
+            </button>
           </div>
         </div>
-
-        {/* Call to Action Button */}
-        <button className="get-started-btn" onClick={onComplete}>
-          Get Started
-        </button>
-
-        {/* Footer Text */}
-        <p className="welcome-footer">
-          Learn the 8 standard Toastmasters roles with scripts and tips
-        </p>
-      </div>
+      )}
     </div>
   );
 };

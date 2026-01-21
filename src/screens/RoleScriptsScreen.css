@@ -78,6 +78,30 @@
   box-shadow: 0 2px 8px rgba(0, 65, 101, 0.15);
 }
 
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #004165;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.back-btn:hover {
+  background-color: rgba(0, 65, 101, 0.1);
+  transform: translateX(-2px);
+}
+
+.back-btn:active {
+  transform: translateX(0);
+  background-color: rgba(0, 65, 101, 0.15);
+}
+
 .search-icon {
   color: #004165;
   flex-shrink: 0;

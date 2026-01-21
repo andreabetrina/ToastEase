@@ -4,11 +4,15 @@ import { ROLE_SCRIPTS } from '../data/roleScripts';
 import { RoleScript } from '../types';
 import { APP_CONSTANTS } from '../constants';
 import './RoleScriptsScreen.css';
-import { Search, Star, List } from 'lucide-react';
+import { Search, Star, List, ArrowLeft } from 'lucide-react';
 
 type FilterTab = 'all' | 'favorites';
 
-const RoleScriptsScreen: React.FC = () => {
+interface RoleScriptsScreenProps {
+  onGoHome?: () => void;
+}
+
+const RoleScriptsScreen: React.FC<RoleScriptsScreenProps> = ({ onGoHome }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [favorites, setFavorites] = useState<string[]>([]);
   const [activeTab, setActiveTab] = useState<FilterTab>('all');
@@ -96,9 +100,19 @@ const RoleScriptsScreen: React.FC = () => {
 
   return (
     <div className="roles-screen-container">
-      {/* Search Bar */}
+      {/* Back Button and Search Bar */}
       <div className="search-section">
         <div className="search-container">
+          {onGoHome && (
+            <button
+              className="back-btn"
+              onClick={onGoHome}
+              aria-label="Go back to home"
+              title="Back to home"
+            >
+              <ArrowLeft size={24} />
+            </button>
+          )}
           <Search size={20} className="search-icon" />
           <input
             type="text"

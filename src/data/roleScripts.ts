@@ -6,11 +6,11 @@ export const ROLE_SCRIPTS: RoleScript[] = [
     name: 'Toastmaster of the Day',
     role: 'Toastmaster of the Day',
     description: 'Sets the tone for the meeting, introduces speakers, and keeps the program on schedule.',
-    script: `Good evening, Toastmasters and guests!
+    script: `Good morning, Toastmasters and guests!
 
 Welcome to [Club Name] Toastmasters Club! I'm [Your Name], your Toastmaster of the Day.
 
-Tonight's theme is [Announce Theme if applicable]. We have an exciting agenda prepared for you.
+This morning's theme is [Announce Theme if applicable]. We have an exciting agenda prepared for you.
 
 Before we begin, I'd like to remind everyone that Toastmasters is a place where we can practice leadership, communication, and speaking skills in a supportive environment. Whether you're an experienced speaker or giving your first speech, everyone here is committed to helping you grow.
 
@@ -20,7 +20,7 @@ Now, let me introduce our first speaker... [Continue with program]
 
 Remember to have fun, be supportive of your fellow Toastmasters, and take advantage of this wonderful opportunity to learn and grow together.
 
-Let's make tonight a great meeting!`,
+Let's make this morning a great meeting!`,
     tips: [
       'Arrive early and familiarize yourself with the agenda',
       'Keep energy high and set a positive tone',
@@ -36,7 +36,7 @@ Let's make tonight a great meeting!`,
     name: 'Speaker',
     role: 'Speaker',
     description: 'Delivers a prepared speech on a chosen topic, demonstrating communication skills.',
-    script: `Good evening, Toastmasters!
+    script: `Good morning, Toastmasters!
 
 [Your Opening - Hook your audience with a question, story, or surprising statement]
 
@@ -107,7 +107,7 @@ Thank you.`,
     name: 'General Evaluator',
     role: 'General Evaluator',
     description: 'Evaluates the overall meeting and provides feedback on all roles and speakers.',
-    script: `Toastmasters, tonight was [adjective - excellent/wonderful/energetic] meeting!
+    script: `Toastmasters, this morning was [adjective - excellent/wonderful/energetic] meeting!
 
 Let me share some observations about our program:
 
@@ -129,7 +129,7 @@ SUGGESTIONS:
 For our next meeting, we might [constructive suggestion].
 
 CLOSING THOUGHT:
-Tonight demonstrated what makes Toastmasters special - a supportive community dedicated to growth. Keep up this excellent momentum!
+This morning demonstrated what makes Toastmasters special - a supportive community dedicated to growth. Keep up this excellent momentum!
 
 Thank you.`,
     tips: [
@@ -150,27 +150,32 @@ Thank you.`,
     name: 'Ah-Counter',
     role: 'Ah-Counter',
     description: 'Counts and reports verbal fillers like "um," "uh," "like," and "you know" used by speakers.',
-    script: `Good evening! I'm [Your Name], your Ah-Counter for tonight.
+    script: `Greetings Mr./Madam Toastmaster, fellow Toastmasters, and guests. The purpose of the Ah-Counter is to note words and sounds that are used as a "crutch" or "pause filler" by anyone who speaks. During the meeting, I will listen for overused words, including and, well, but, so, and you know. I will also listen for filler sounds, including ah, um, and er. I will also note when a speaker repeats a word or phrase, such as "I, I" or "This means, this means." At the end of the meeting, I will report the number of times that each speaker used these expressions.
 
-My role is to track filler words - those little verbal crutches we all use sometimes, like "um," "uh," "like," "you know," "and," and other hesitations.
+Thank you, Mr./Madam Toastmaster.
 
-Tonight's results:
+---
 
-[Speaker 1]: [number] filler words. I noticed [specific filler used].
-[Speaker 2]: [number] filler words. [Observation].
+AH-COUNTER REPORT:
+
+[Speaker 1]: [number] filler words
+- Specific fillers: [list the types - e.g., "um" x3, "and" x2, "like" x1]
+
+[Speaker 2]: [number] filler words
+- Specific fillers: [list the types]
+
 [Add any other speakers]
 
+SUMMARY:
+- Speaker with fewest fillers: [name] with [number]
+- Speaker with most fillers: [name] with [number]
+- Most common filler used today: [word]
+- Most improved speaker: [name]
+
 OBSERVATIONS:
-- [Speaker with most: observation]
-- [Speaker with improvement: observation]
-- [Positive trend or challenge noticed]
+Using filler words is completely natural, especially when we're nervous or thinking on our feet. The good news? With practice and awareness, we can reduce them. I encourage everyone to record themselves and listen - that's the best way to catch these patterns.
 
-OVERALL:
-Using filler words is completely natural, especially when we're nervous. The good news? With practice and awareness, we can reduce them. I encourage everyone to record themselves and listen - that's the best way to catch them.
-
-The speaker who was most aware of their fillers and made the most progress this period was [name].
-
-Remember, every time we catch ourselves and pause instead of saying "um," that's a win!
+Remember, every time we catch ourselves and pause instead of saying "um," that's a win! Keep practicing, and your confidence will grow.
 
 Thank you.`,
     tips: [
@@ -191,26 +196,46 @@ Thank you.`,
     name: 'Grammarian',
     role: 'Grammarian',
     description: 'Monitors the language used during the meeting and notes any grammar improvements.',
-    script: `Good evening! I'm [Your Name], your Grammarian for tonight.
+    script: `Mr./Madam Toastmaster, fellow Toastmasters, and guests. As Grammarian, it is my responsibility to pay close attention to all speakers, listening carefully to their language usage. I'll take note of any improper language, as well as any outstanding words, quotes, sayings, or thoughts. As Grammarian, it is also my duty to introduce the Word of the Day.
 
-My role is to monitor the language used during our meeting and note grammar, vocabulary, and language usage.
+For today's meeting, the Word of the Day is: "[Word]" which means [Definition].
 
-WORDS OF THE EVENING:
-I'd like to highlight [Word 1: definition]. We also heard some good uses of [Word 2] by [speaker name].
+[Display the Word of the Day at the front of the room.]
 
-GRAMMAR OBSERVATIONS:
-I noticed some excellent grammar tonight! For example, [positive observation]. However, I also heard a couple of areas where we could improve:
+An example of using the word is: [Example sentence or phrase using the word]
 
-- [Speaker name] said "[incorrect phrase]" - the correct usage would be "[correct phrase]" because [brief explanation].
-- Another common mistake tonight was [observation] - the correct way would be [correction].
+Each speaker is encouraged to use the Word of the Day. I will give the Grammarian's report when called upon during the meeting and also report on the usage of the Word of the Day.
 
-VOCABULARY WINS:
-[Speaker name] used a fantastic word: "[word]," which means [definition]. Great vocabulary choice!
+Thank you, Mr./Madam Toastmaster.
+
+---
+
+GRAMMARIAN'S REPORT:
+
+Date: [Date] | Word of the Day: [Word]
+
+SPEAKERS WHO USED THE WORD OF THE DAY:
+- [Speaker 1 name]
+- [Speaker 2 name]
+- [Add any others who used it]
+
+LANGUAGE HIGHLIGHTS:
+
+Outstanding Words, Quotes, or Sayings:
+- [Speaker name]: "[Quote or phrase]" - This was excellent because [reason]
+- [Another example if applicable]
+
+LANGUAGE OBSERVATIONS:
+
+Improper Language or Grammar Issues:
+- [Speaker name]: Used "[incorrect phrase]" - The correct usage is "[correct phrase]" because [brief explanation]
+- [Another example if applicable]
+
+POSITIVE LANGUAGE USAGE:
+- [Speaker name] demonstrated excellent vocabulary/grammar by [specific example]
 
 OVERALL ASSESSMENT:
-Tonight's language overall was [assessment - articulate/clear/engaging]. Keep striving for clarity and precision in your language - it strengthens your message.
-
-Remember, language is how we connect with our audiences. The more precise and thoughtful we are with our words, the more impactful our communication becomes.
+This morning's language usage was [assessment: articulate/clear/engaging/professional]. Keep working on clarity and precision in your communication - it strengthens your message and engages your audience more effectively.
 
 Thank you.`,
     tips: [
@@ -231,25 +256,53 @@ Thank you.`,
     name: 'Timer',
     role: 'Timer',
     description: 'Tracks and reports the time for all speeches and role performances.',
-    script: `Good evening! I'm [Your Name], your Timer for tonight.
+    script: `Greetings Mr./Madam Toastmaster, fellow Toastmasters, and guests. As Timer, I will time the Table Topics speakers, formal speeches, and the evaluations. I will also alert each speaker of the time they have left, using the green, yellow, and red cards, which denote specific times remaining.
 
-I tracked the time for all our speakers and role players. Here's how we did:
+TABLE TOPICS SPEAKERS should limit their remarks to no more than 2 minutes:
+- At 1 minute, I will raise the green card.
+- At 1 minute and 30 seconds, I will raise the yellow card.
+- At 2 minutes, I will raise the red card.
 
-SPEECH TIMES:
-[Speaker 1]: [minutes:seconds] - [status: on time/a bit short/over time]
+ICE BREAKER SPEECHES should be 4-6 minutes in length:
+- At 4 minutes, I will raise the green card.
+- At 5 minutes, I will raise the yellow card.
+- At 6 minutes, I will raise the red card.
+
+MOST OTHER SPEECHES should be 5-7 minutes in length:
+- At 5 minutes, I will raise the green card.
+- At 6 minutes, I will raise the yellow card.
+- At 7 minutes, I will raise the red card.
+
+INDIVIDUAL EVALUATIONS should be between 2-3 minutes:
+- At 2 minutes, I will raise the green card.
+- At 2 minutes and 30 seconds, I will raise the yellow card.
+- At 3 minutes, I will raise the red card.
+
+Thank you, Mr./Madam Toastmaster.
+
+---
+
+TIMER'S REPORT:
+
+TABLE TOPICS SPEAKERS:
+[Speaker 1]: [minutes:seconds] - [status: on time/exceeded]
 [Speaker 2]: [minutes:seconds] - [status]
-[Add all speakers with time frames: 5-7 minutes for prepared speeches, 1-2 minutes for impromptu, etc.]
 
-ROLE TIMES:
-[List approximate times for different roles as needed]
+FORMAL SPEECHES:
+[Speaker 1]: [minutes:seconds] - [status: on time/short/over]
+[Speaker 2]: [minutes:seconds] - [status]
 
-TIME MANAGEMENT NOTES:
-- [Fastest speaker: name]
-- [Most on time: observation]
-- [Person closest to time limit: observation]
+EVALUATIONS:
+[Evaluator 1]: [minutes:seconds] - [status]
+[Evaluator 2]: [minutes:seconds] - [status]
 
-OVERALL:
-Overall, we stayed right on schedule! Keeping to our time limits shows respect for our audience and fellow members. It also helps us improve our delivery efficiency - saying more with fewer words is a valuable skill.
+TIME MANAGEMENT SUMMARY:
+- Fastest speaker: [name] - [time]
+- Slowest speaker: [name] - [time]
+- Most speakers on time: [count/percentage]
+- Speakers who exceeded time: [names]
+
+Overall, time management was [excellent/good/needs improvement]. Keep focusing on delivering your message within your allotted time - it's a valuable skill that shows respect for your audience and fellow speakers.
 
 Thank you.`,
     tips: [
@@ -270,37 +323,51 @@ Thank you.`,
     name: 'Table Topics Master',
     role: 'Table Topics Master',
     description: 'Conducts impromptu speaking exercises (Table Topics), presenting topics and judging speakers.',
-    script: `Good evening, Toastmasters! I'm [Your Name], your Table Topics Master.
+    script: `Greetings Mr./Madam Toastmaster, fellow Toastmasters, and guests. The purpose of the Topicsmaster is to facilitate Table Topics®, where guests and members will have the opportunity to practice their impromptu speaking. I will introduce a topic and call on speakers, who will be given two minutes to speak on the subject.
 
-Table Topics is where we get to practice speaking on the spot - no preparation, just you and your thoughts for 1-2 minutes. It's not about being perfect; it's about thinking quickly and speaking with confidence.
-
-TONIGHT'S TOPICS:
-
-[Speaker 1], your topic is: "[Topic - funny, thought-provoking, or creative question]"
-You have [1-2] minutes. Begin!
-
-[After speaker finishes]
-
-Excellent! [Name], you really [specific observation].
+Thank you Mr./Madam Toastmaster.
 
 ---
 
-[Speaker 2], your topic is: "[Topic]"
-Begin!
+TOPICSMASTER CHECKLIST:
 
-[Repeat for each participant]
+Today's Meeting Theme: [Theme - if applicable]
 
-TABLE TOPICS REVIEW:
-Tonight we heard some fantastic responses! I'd like to highlight:
-- [Speaker name] who gave us [specific moment]
-- [Speaker name] for [specific strength]
+TOPICS FOR TODAY:
 
-THE WINNER OF TABLE TOPICS TONIGHT:
-Based on clarity of thought, organization, and delivery, the winner is [Speaker name]! [Brief reason]
+[Topic 1]: [Description or question]
+[Topic 2]: [Description or question]
+[Topic 3]: [Description or question]
+[Topic 4]: [Description or question]
+[Topic 5]: [Description or question]
 
-Remember, Table Topics is one of the best ways to improve your quick-thinking and extemporaneous speaking skills. Embrace the challenge!
+---
 
-Thank you all for participating.`,
+TABLE TOPICS SPEAKERS:
+
+| Speaker's Name | Topic | Time |
+|---|---|---|
+| [Name 1] | [Topic] | [Minutes:Seconds] |
+| [Name 2] | [Topic] | [Minutes:Seconds] |
+| [Name 3] | [Topic] | [Minutes:Seconds] |
+| [Name 4] | [Topic] | [Minutes:Seconds] |
+| [Name 5] | [Topic] | [Minutes:Seconds] |
+
+---
+
+TOPICSMASTER'S REPORT:
+
+SPEAKERS PARTICIPATED: [Number] speakers
+
+HIGHLIGHTS:
+- Best answer: [Speaker name] - [brief reason]
+- Most creative response: [Speaker name] - [brief description]
+- Best use of humor: [Speaker name]
+
+OVERALL OBSERVATION:
+Today's Table Topics demonstrated [observation about participation, creativity, or speaking quality]. Keep embracing these opportunities - impromptu speaking is one of the best ways to improve your quick thinking and delivery skills.
+
+Thank you.`,
     tips: [
       'Prepare 5-7 topics suitable for your audience',
       'Make topics interesting, funny, or thought-provoking',

@@ -48,6 +48,324 @@
 
 .initials-text {
   font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.welcome-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+}
+
+/* Navigation Buttons */
+.nav-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-icon {
+  font-size: 24px;
+}
+
+.btn-text {
+  font-size: 18px;
+}
+
+.primary-btn {
+  background-color: #F2DF74;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn:hover {
+  background-color: #e8d565;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #e0e0e0;
+}
+
+.secondary-btn:hover {
+  background-color: #f9f9f9;
+  border-color: #d0d0d0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-out;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.modal-message {
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 32px 0;
+  line-height: 1.6;
+}
+
+.modal-close-btn {
+  background-color: #F2DF74;
+  color: #333;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: #e8d565;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-btn:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 16px;
+  }
+
+  .welcome-content {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+  }
+
+  .mic-symbol {
+    font-size: 48px;
+  }
+
+  .initials-badge {
+    width: 50px;
+    height: 50px;
+  }
+
+  .initials-text {
+    font-size: 24px;
+  }
+
+  .welcome-title {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+  }
+
+  .welcome-subtitle {
+    font-size: 16px;
+    margin: 0 0 32px 0;
+  }
+
+  .nav-buttons-container {
+    max-width: 100%;
+    gap: 14px;
+  }
+
+  .nav-btn {
+    padding: 16px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .btn-icon {
+    font-size: 22px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    padding: 32px 24px;
+    width: 85%;
+    border-radius: 12px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+  }
+
+  .modal-message {
+    font-size: 16px;
+    margin: 0 0 24px 0;
+  }
+
+  .modal-close-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 12px;
+  }
+
+  .icon-container {
+    margin-bottom: 16px;
+  }
+
+  .mic-symbol {
+    font-size: 40px;
+  }
+
+  .initials-badge {
+    width: 45px;
+    height: 45px;
+  }
+
+  .initials-text {
+    font-size: 20px;
+  }
+
+  .welcome-title {
+    font-size: 28px;
+    margin: 0 0 8px 0;
+  }
+
+  .welcome-subtitle {
+    font-size: 14px;
+    margin: 0 0 28px 0;
+  }
+
+  .nav-buttons-container {
+    gap: 12px;
+  }
+
+  .nav-btn {
+    padding: 14px 24px;
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .btn-icon {
+    font-size: 20px;
+  }
+
+  .btn-text {
+    font-size: 15px;
+  }
+
+  .modal-content {
+    padding: 28px 20px;
+    width: 90%;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-message {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+  }
+
+  .modal-close-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
   font-weight: 600;
   color: #004165;
 }
