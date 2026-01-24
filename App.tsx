@@ -16,7 +16,7 @@ export default function App() {
     try {
       const hasSeenWelcome = localStorage.getItem('toastease_welcome_seen');
       if (hasSeenWelcome === 'true' && APP_CONSTANTS.WELCOME_ENABLED) {
-        setShowWelcome(false);
+        setShowWelcome(true);
       }
     } catch (error) {
       console.error('Error checking welcome status:', error);
